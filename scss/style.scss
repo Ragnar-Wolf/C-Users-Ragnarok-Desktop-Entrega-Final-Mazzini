@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(247, 35, 7, 0.5), rgba(112, 111, 111, 0.8)), url(../img/lineas-geometricas-de-neon-abstracto_7680x5120_xtrafondos.com.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    }
+
+
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .tarjeta {
+        background: #fff;
+        width: 300px;
+        height: 100%;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 43px 12px rgba(0, 0, 0, 0.88);
+        h5 {
+            padding: 10px;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    .tarjeta-image {
+        height: 320px;
+        margin-bottom: 15px;
+        background-size: cover;
+        border-radius: 15px 15px 0 0;
+    }
+
+@import "./main_contacto";
+@import "./main_login";
+@import "./main_faq";
+@import "./main_pcarmadas";
+@import "./main_accesorios";
+@import "./main_hardware";
+@import "./main_index";
+
+@media screen and (max-width: 980px) {
+    .media {
+        display: none;
+    }
+    
+}

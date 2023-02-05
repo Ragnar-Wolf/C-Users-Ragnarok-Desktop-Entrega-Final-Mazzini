@@ -1,0 +1,162 @@
+// Variables
+$light-color: #B70E21;
+$dark-color: #141212;
+$gray-color: #181616e0;
+
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h1,
+h3 {
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+//clases de utilidad//
+.container-login {
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 10px;
+}
+
+.btn-login {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: $light-color;
+    padding: 13px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background: lighten($light-color, 10%);
+}
+
+.large {
+    font-size: 1.5rem;
+}
+
+.small {
+    font-size: 1rem;
+}
+
+.txt-danger {
+    color:$light-color;
+}
+
+.txt-gray {
+    color: $gray-color;
+}
+
+.p-80 {
+    padding: 80px;
+}
+
+//Login
+#login {
+    .login-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        &-bk {
+            background: url(../img/fondos-login-invertida.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            height: 100%;
+        }
+        .login-wrap-form {
+            padding: 50px;
+            background: #fff;
+            color: $dark-color;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            h2,
+            h3,
+            p {
+                text-align: center;
+            }
+            h2 {
+                padding-bottom: 20px;
+            }
+            form {
+                p {
+                    text-align: right;
+                }
+                button {
+                    width: 100%;
+                    border-radius: 10px;
+                    margin: 10px;
+                }
+            }// cierre del form
+        }//cierre &-form
+    }//cierre login-wrap
+}//cierr  #login
+
+///Formulario 
+.form {
+    padding: 35px;
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input {
+        width: 100%;
+        padding: 2px;
+        margin-bottom: 5px;
+    }
+}
+.form-ln-gray {
+    @extend .form;
+    input {
+        border: 0;
+        border-bottom: 2px solid $light-color;
+    }
+}
+
+//media 
+@media only screen and (max-width: 768px) {
+    .bk {
+        height: 100%;
+    }
+    #login {
+        .login-wrap {
+            grid-template-columns: 1fr;
+            &-bk {
+                display: none;
+            }
+            .form {
+                padding: 0px;
+            }
+        }
+        .login-wrap-form {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+    }
+}
