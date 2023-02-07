@@ -144,120 +144,123 @@ ul {
   .contact-info p {
     text-align: left; } }
 
-h2 {
-  font-size: 2rem;
-  text-transform: uppercase; }
-
-h3 {
-  font-size: 1.5rem; }
-
-h1,
-h3 {
-  font-weight: 600; }
-
-h1,
-h2,
-h3,
-p {
-  margin-bottom: 20px; }
-
-p {
-  font-size: 1rem; }
-
-a,
-a:visited {
-  text-decoration: none;
-  color: white; }
-
-.container-login {
-  margin: auto;
-  max-width: 1300px;
-  overflow: auto;
-  padding: 0 10px; }
-
-.btn-login {
-  display: inline-block;
-  font-size: 18px;
-  color: #fff;
-  background: #B70E21;
-  padding: 13px 30px;
-  border-radius: 10px;
-  cursor: pointer; }
-
-.btn-login:hover {
-  background: #e6122a; }
-
-.large {
-  font-size: 1.5rem; }
-
-.small {
-  font-size: 1rem; }
-
-.txt-danger {
-  color: #B70E21; }
-
-.txt-gray {
-  color: #181616e0; }
-
-.p-80 {
-  padding: 80px; }
-
-#login .login-wrap {
+.container {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
-  #login .login-wrap-bk {
-    background: url(../img/fondos-login-invertida.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    height: 100%; }
-  #login .login-wrap .login-wrap-form {
-    padding: 50px;
-    background: #fff;
-    color: #141212;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px; }
-    #login .login-wrap .login-wrap-form h2,
-    #login .login-wrap .login-wrap-form h3,
-    #login .login-wrap .login-wrap-form p {
-      text-align: center; }
-    #login .login-wrap .login-wrap-form h2 {
-      padding-bottom: 20px; }
-    #login .login-wrap .login-wrap-form form p {
-      text-align: right; }
-    #login .login-wrap .login-wrap-form form button {
+  height: 100%;
+  width: 100%;
+  place-items: center; }
+
+.wrapper {
+  background: #070707;
+  background: linear-gradient(-135deg, #f52222, #656875);
+  width: 380px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1); }
+  .wrapper .title {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    user-select: none;
+    border-radius: 15px;
+    background: linear-gradient(-135deg, #f52222, #656875); }
+  .wrapper form {
+    padding: 10px 30px 50px 30px; }
+    .wrapper form .field {
+      height: 50px;
       width: 100%;
-      border-radius: 10px;
-      margin: 10px; }
+      margin-top: 20px;
+      position: relative; }
+      .wrapper form .field input {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        font-size: 17px;
+        padding-left: 20px;
+        border: 1px solid lightgrey;
+        border-radius: 25px;
+        transition: all 0.3s ease; }
+        .wrapper form .field input:focus {
+          border-color: #f52222; }
+      .wrapper form .field label {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        color: #999999;
+        font-weight: 400;
+        font-size: 17px;
+        pointer-events: none;
+        transform: translateY(-50%);
+        transition: all 0.3s ease; }
 
-.form, .form-ln-gray {
-  padding: 35px; }
-  .form label, .form-ln-gray label {
-    display: block;
-    margin-bottom: 5px; }
-  .form input, .form-ln-gray input {
-    width: 100%;
-    padding: 2px;
-    margin-bottom: 5px; }
+form .field input:valid {
+  border-color: #f52222; }
+  form .field input:valid ~ label {
+    top: 0%;
+    font-size: 16px;
+    color: #f52222;
+    background: #fff;
+    transform: translateY(-50%); }
 
-.form-ln-gray input {
-  border: 0;
-  border-bottom: 2px solid #B70E21; }
+form .field input:focus ~ label {
+  top: 0%;
+  font-size: 16px;
+  color: #f52222;
+  background: #fff;
+  transform: translateY(-50%); }
 
-@media only screen and (max-width: 768px) {
-  .bk {
-    height: 100%; }
-  #login .login-wrap {
-    grid-template-columns: 1fr; }
-    #login .login-wrap-bk {
-      display: none; }
-    #login .login-wrap .form, #login .login-wrap .form-ln-gray {
-      padding: 0px; }
-  #login .login-wrap-form {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px; } }
+form .field input[type="submit"] {
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #f52222, #656875);
+  transition: all 0.3s ease; }
+  form .field input[type="submit"]:active {
+    transform: scale(0.95); }
+
+form .content {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-around; }
+  form .content .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  form .content input {
+    width: 15px;
+    height: 15px;
+    background: #f52222; }
+  form .content label {
+    color: #262626;
+    user-select: none;
+    padding: 5px; }
+  form .content .pass-link {
+    color: "#f52222"; }
+
+form .signup-link {
+  color: #262626;
+  margin-top: 20px;
+  text-align: center; }
+  form .signup-link a {
+    color: #f52222;
+    text-decoration: none; }
+    form .signup-link a:hover {
+      text-decoration: underline; }
+
+form .pass-link a {
+  color: #f52222;
+  text-decoration: none; }
+  form .pass-link a:hover {
+    text-decoration: underline; }
 
 .container {
   display: flex;
