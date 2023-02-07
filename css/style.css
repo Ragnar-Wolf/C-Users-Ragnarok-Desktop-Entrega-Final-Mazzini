@@ -144,20 +144,20 @@ ul {
   .contact-info p {
     text-align: left; } }
 
-.container {
+.container-login {
   display: grid;
   height: 100%;
   width: 100%;
   place-items: center; }
 
-.wrapper {
+.wrapper-login {
   background: #070707;
   background: linear-gradient(-135deg, #f52222, #656875);
   width: 380px;
   background: #fff;
   border-radius: 15px;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1); }
-  .wrapper .title {
+  .wrapper-login .title-login {
     font-size: 35px;
     font-weight: 600;
     text-align: center;
@@ -166,14 +166,14 @@ ul {
     user-select: none;
     border-radius: 15px;
     background: linear-gradient(-135deg, #f52222, #656875); }
-  .wrapper form {
+  .wrapper-login form {
     padding: 10px 30px 50px 30px; }
-    .wrapper form .field {
+    .wrapper-login form .field {
       height: 50px;
       width: 100%;
       margin-top: 20px;
       position: relative; }
-      .wrapper form .field input {
+      .wrapper-login form .field input {
         height: 100%;
         width: 100%;
         outline: none;
@@ -182,9 +182,9 @@ ul {
         border: 1px solid lightgrey;
         border-radius: 25px;
         transition: all 0.3s ease; }
-        .wrapper form .field input:focus {
+        .wrapper-login form .field input:focus {
           border-color: #f52222; }
-      .wrapper form .field label {
+      .wrapper-login form .field label {
         position: absolute;
         top: 50%;
         left: 20px;
@@ -224,26 +224,26 @@ form .field input[type="submit"] {
   form .field input[type="submit"]:active {
     transform: scale(0.95); }
 
-form .content {
+form .content-login {
   display: flex;
   width: 100%;
   height: 50px;
   font-size: 16px;
   align-items: center;
   justify-content: space-around; }
-  form .content .checkbox {
+  form .content-login .checkbox {
     display: flex;
     align-items: center;
     justify-content: center; }
-  form .content input {
+  form .content-login input {
     width: 15px;
     height: 15px;
     background: #f52222; }
-  form .content label {
+  form .content-login label {
     color: #262626;
     user-select: none;
     padding: 5px; }
-  form .content .pass-link {
+  form .content-login .pass-link {
     color: "#f52222"; }
 
 form .signup-link {
