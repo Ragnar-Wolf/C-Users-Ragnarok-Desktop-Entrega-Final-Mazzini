@@ -21,7 +21,7 @@
 		border-radius: 15px;
 		background: linear-gradient(-135deg, #f52222,#656875);
 	}
-	form {
+	.form-login {
 		padding: 10px 30px 50px 30px;
 		.field {
 			height: 50px;
@@ -55,7 +55,7 @@
 		}
 	}
 }
-form {
+.form-login {
 	.field {
 		input {
 			&:valid {
@@ -104,7 +104,7 @@ form {
 		font-size: 16px;
 		align-items: center;
 		justify-content: space-around;
-		.checkbox {
+		.checkbox-login {
 			display: flex;
 			align-items: center;
 			justify-content: center;

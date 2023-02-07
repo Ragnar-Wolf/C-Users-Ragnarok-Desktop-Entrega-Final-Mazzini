@@ -166,14 +166,14 @@ ul {
     user-select: none;
     border-radius: 15px;
     background: linear-gradient(-135deg, #f52222, #656875); }
-  .wrapper-login form {
+  .wrapper-login .form-login {
     padding: 10px 30px 50px 30px; }
-    .wrapper-login form .field {
+    .wrapper-login .form-login .field {
       height: 50px;
       width: 100%;
       margin-top: 20px;
       position: relative; }
-      .wrapper-login form .field input {
+      .wrapper-login .form-login .field input {
         height: 100%;
         width: 100%;
         outline: none;
@@ -182,9 +182,9 @@ ul {
         border: 1px solid lightgrey;
         border-radius: 25px;
         transition: all 0.3s ease; }
-        .wrapper-login form .field input:focus {
+        .wrapper-login .form-login .field input:focus {
           border-color: #f52222; }
-      .wrapper-login form .field label {
+      .wrapper-login .form-login .field label {
         position: absolute;
         top: 50%;
         left: 20px;
@@ -195,23 +195,23 @@ ul {
         transform: translateY(-50%);
         transition: all 0.3s ease; }
 
-form .field input:valid {
+.form-login .field input:valid {
   border-color: #f52222; }
-  form .field input:valid ~ label {
+  .form-login .field input:valid ~ label {
     top: 0%;
     font-size: 16px;
     color: #f52222;
     background: #fff;
     transform: translateY(-50%); }
 
-form .field input:focus ~ label {
+.form-login .field input:focus ~ label {
   top: 0%;
   font-size: 16px;
   color: #f52222;
   background: #fff;
   transform: translateY(-50%); }
 
-form .field input[type="submit"] {
+.form-login .field input[type="submit"] {
   color: #fff;
   border: none;
   padding-left: 0;
@@ -221,45 +221,45 @@ form .field input[type="submit"] {
   cursor: pointer;
   background: linear-gradient(-135deg, #f52222, #656875);
   transition: all 0.3s ease; }
-  form .field input[type="submit"]:active {
+  .form-login .field input[type="submit"]:active {
     transform: scale(0.95); }
 
-form .content-login {
+.form-login .content-login {
   display: flex;
   width: 100%;
   height: 50px;
   font-size: 16px;
   align-items: center;
   justify-content: space-around; }
-  form .content-login .checkbox {
+  .form-login .content-login .checkbox-login {
     display: flex;
     align-items: center;
     justify-content: center; }
-  form .content-login input {
+  .form-login .content-login input {
     width: 15px;
     height: 15px;
     background: #f52222; }
-  form .content-login label {
+  .form-login .content-login label {
     color: #262626;
     user-select: none;
     padding: 5px; }
-  form .content-login .pass-link {
+  .form-login .content-login .pass-link {
     color: "#f52222"; }
 
-form .signup-link {
+.form-login .signup-link {
   color: #262626;
   margin-top: 20px;
   text-align: center; }
-  form .signup-link a {
+  .form-login .signup-link a {
     color: #f52222;
     text-decoration: none; }
-    form .signup-link a:hover {
+    .form-login .signup-link a:hover {
       text-decoration: underline; }
 
-form .pass-link a {
+.form-login .pass-link a {
   color: #f52222;
   text-decoration: none; }
-  form .pass-link a:hover {
+  .form-login .pass-link a:hover {
     text-decoration: underline; }
 
 .container {
